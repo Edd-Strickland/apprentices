@@ -1,9 +1,29 @@
+<ion-menu [content]='content'>
 <ion-header>
   <ion-toolbar>
+      <ion-buttons slot='start'>
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
     <ion-title>menu</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-
+  <ion-list>
+    <button ion-item (click)="openPage(homePage)">
+      Home
+    </button>
+    <button ion-item (click)="openPage(loginPage)">
+      Login 
+    </button>
+    <button ion-item (click)="openPage(listPage)">
+      List
+    </button>
+    <button ion-item (click)="closeMenu()">
+      Close Menu
+    </button>
+  </ion-list>
 </ion-content>
+</ion-menu>
+
+<ion-nav id="nav" #content [root]='rootPage'></ion-nav>
