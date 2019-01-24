@@ -36,12 +36,12 @@ export class AppComponent {
     {
       title: 'Members',
       url: '/members',
-      icon: ''
+      icon: 'person'
     },
     {
       title: 'Dashboard',
       url: '/members/dashboard',
-      icon: ''
+      icon: 'today'
     }
   ];
 

@@ -12,7 +12,7 @@ const routes: Routes = [
 
   { path: 'members', loadChildren: './members/members.module#MembersPageModule' },
   {
-    path: 'dashboard',
+    path: 'members/dashboard',
     canActivate: [AuthGuardService],
     loadChildren: './members/dashboard/dashboard.module#DashboardPageModule'
   }
