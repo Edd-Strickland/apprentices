@@ -1,9 +1,22 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>register</ion-title>
+    <ion-buttons slot="start">
+        <ion-back-button defaultHref="/login"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Register</ion-title>
   </ion-toolbar>
 </ion-header>
-
+ 
 <ion-content padding>
+  <ion-item>
+    <ion-label>Name</ion-label>
+    <ion-input></ion-input>
+</ion-item>
+<ion-item>
+    <ion-label>Password</ion-label>
+    <ion-input></ion-input>
+</ion-item>
+<ion-button ion-button expand="block">Register</ion-button>
+<ion-button expand="block" color="secondary" routerDirection="backward">Cancel</ion-button>
 
 </ion-content>

@@ -1,3 +1,4 @@
+import { AuthenticationService } from '../services/authentication.service';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -10,12 +11,17 @@ import { Router } from '@angular/router';
 export class LoginPage {
 
   constructor(
-    private router: Router
-    ) { 
-    }
+      private router: Router,
+      private authService: AuthenticationService
+    ) {}
 
   doLogin() {
+    this.authService.login();
     this.router.navigate(['/tabs/tab1']);
+  }
+
+  doRegister() {
+    this.router.navigate(['/register']);
   }
 
 }
